@@ -14,7 +14,7 @@
 .titulo-centralizado{
     text-align: center;
 }
-p{
+.descricao-barbearia{
     text-align: center;
 }
 
@@ -44,4 +44,15 @@ ul{
 
 .imagembeneficios{
     width: 50%;
+}
+
+footer {
+    text-align: center;
+    background: url(imagens/bg.jpg);
+    padding: 40px 0;
+}
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-top: 20px;
 }

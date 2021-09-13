@@ -1,51 +1,158 @@
-body{
-    
+header{
+    background: #BBBBBB;
+    padding: 20px 0;
 }
 
-#banner{
-    width: 100%;
+.caixa{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
 }
 
-.principal{
-    background: #CCCCCC;
-    padding: 30px;
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+
 }
 
-.titulo-principal{
-    padding-left: 20px;
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
 }
 
-.titulo-centralizado{
-    text-align: center;
-}
-p{
-    text-align: center;
-}
-
-#missao{
-    font-size: 20px;
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
 }
 
-em strong{
-    color: red;
+nav a:hover{
+    color: #C78C19;
+    text-decoration: underline;
 }
 
-.itens{
-    font-style: italic;
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
 }
 
-.beneficios{
-    background: #FFFFFF;
-    padding: 20px;
-}
-
-ul{
+.produtos li{
     display: inline-block;
+    text-align: center;
+    width: 30%;
     vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
 }
 
-.imagembeneficios{
+.produtos li:hover {
+    border-color: #C78C19;
+}
+
+.produtos li:active{
+    border-color: #088C19;
+}
+
+.produtos li:hover h2{
+    font-size: 34px;
+}
+
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao{
+    font-size: 18px;
+}
+
+.produto-preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background: url(imagens/bg.jpg);
+    padding: 40px 0;
+}
+
+.copyright{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+form{
+    margin: 40px 0;
+}
+
+/* No CSS, quando criamos uma configuração específica para um elemento, e queremos replicar essa mesma configuração para outro elemento, utilizamos a vírgula como nos exemplos abaixo */
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Adicionei uma classe apenas para os inputs padrões, dessa forma os inputs "radio" não são alterados e permanecem no display inline */
+.input-padrao{
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 25px;
     width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+/* Nesse campo, configuramos o botão "Enviar" do formulário. Onde mexemos no seu tamanho, cor, transição etc */
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+/* Com essa configuração, utilizamos uma pseudo-classe hover. Onde ao passar o mouse por cima do elemento (botão enviar) irá acontecer uma ação, que nesse caso, será a mudança da cor de fundo do elemento.
+Outra configuração que fizemos, foi a de "transform" onde conseguimos transformar um elemento. Nesse caso, aumentamos seu tamanho em 20% proporcionalmente todos os seus tamanhos.  */
+
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.2);
+}
+
+/* Configuramos a tabela */
+table{
+    margin: 20px 0 40px;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
 }
