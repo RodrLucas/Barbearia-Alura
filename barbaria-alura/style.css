@@ -1,3 +1,7 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
 header{
     background: #BBBBBB;
     padding: 20px 0;
@@ -91,6 +95,7 @@ footer{
     margin-top: 20px;
 }
 
+/* O main tendo width de 940px se torna um elemendo fundamental para a padronização de todo o conteúdo do nosso site */
 main{
     width: 940px;
     margin: 0 auto;
@@ -155,4 +160,83 @@ thead{
 td, th{
     border: 1px solid #000000;
     padding: 8px 15px;
+}
+
+/* Css da página inicial */
+.banner{
+    width: 100%;
+}
+
+.titulo-principal{
+    text-align: center;
+    /* em medida proporcional para px - no caso abaixo, quero que o titulo principal tenha o dobro do tamanho em relação ao resto do texto independe do tamanho da fonte (2em = 2x o tamanho da fonte base)*/
+    font-size: 2em;
+    margin-bottom: 1em;
+    /*A propriedade clear especifica se um elemento pode ter elementos flutuantes ao seu lado ou se devem ser movidos para abaixo dele (clear). Essa propriedade se aplica à elementos flutuantes ou não flutuantes. - OU SEJA, USAMOS PARA LIMPAR O EFEITO DA PROPRIEDADE FLOAT*/
+    clear: left;
+}
+
+.principal p{
+    margin-bottom: 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.utensilios{
+    width: 120px;
+    /*Usamos a propriedade float quando queremos que nosso elemento (img) "levante" em relação aos outros, porém, na sua posição inicial permancerá sua "sombra" dessa forma todos os elementos em volta vão se comportar como se a img ainda estivesse na posição inicial*/
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+/* Lembrando que a utilização da medida "em" abaixo é para criar um espaçamento interno proporcional ao tamanho da fonte do meu site */
+.mapa{
+    padding: 3em 0;
+}
+
+.mapa p {
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+
+.beneficios{
+    padding: 3em 0;
+}
+
+/* Adicionamos a div para englobar todo o conteúdo, e damos um width de 640px, dessa forma, a lista ocupará 40% da div e a img 60% */
+.conteudo-beneficios{
+    width: 640px;
+    margin: 0 auto;
+}
+
+/* A ul é inline, porém, os li são block, e por isso, sem a propriedade "inline-block" não conseguimos colocar um elemento do lado do outro */
+.lista-beneficios{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+/* line-height é para alterar o espaçamento entre as linhas da lista */
+.itens{
+    line-height: 1.5;
+}
+
+.itens:first-child{
+    font-weight: bold;
+}
+
+.imagem-beneficios{
+    width: 60%;
+}
+
+/* Com essas configurações abaixo, deixamos a caixa "video" do mesmo tamanho do video original, porem adicionamos uma margem para cima e para baixo de "1em" (proporcional ao tamanho da fonte base do site) e "auto" nas laterais, onde irá centralizar o vídeo */
+.video{
+    width: 560px;
+    margin: 2em auto;
 }
